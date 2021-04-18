@@ -1,12 +1,15 @@
 package com.iotek.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
+
+import java.util.List;
+import java.util.TreeSet;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     TelephonyManager mTelephonyManager ;
@@ -16,11 +19,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mTextView = findViewById(R.id.tv);
 
-        mTelephonyManager = (TelephonyManager) this.getSystemService(Context.TELEPHONY_SERVICE);
-        int simCarrierId = mTelephonyManager.getSimCarrierId();
-        CharSequence simCarrierIdName = mTelephonyManager.getSimCarrierIdName();
-        mTextView.setText(simCarrierId + "" + "----" + simCarrierIdName);
+        mTextView = findViewById(R.id.tv);
+        mTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DataPerson dataPerson = new DataPerson();
+                List<Person> data = dataPerson.data();
+                Log.e("Person",data.toString());
+            }
+        });
+
+
+
     }
 }
