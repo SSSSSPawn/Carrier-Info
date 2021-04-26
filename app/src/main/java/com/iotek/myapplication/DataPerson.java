@@ -107,40 +107,40 @@ public class DataPerson {
         return personList;
     }
 
-    [
-    Person{derviceCode='ES01', offerCode='ES00001', itemCode='', deviceName='延长服务包', subDeviceName='华为无忧', isEnable=false},
-
-    Person{derviceCode='ES01', offerCode='ES000012', itemCode='', deviceName='延长服务包', subDeviceName='华为无忧', isEnable=true},
-
-    Person{derviceCode='ES01', offerCode='', itemCode='', deviceName='延长服务包', subDeviceName='华为无忧', isEnable=false},
-
-    Person{derviceCode='ES02', offerCode='ES00002', itemCode='ITEM00002', deviceName='延长服务包2', subDeviceName='华为无忧2', isEnable=false},
-
-    Person{derviceCode='ES02', offerCode='', itemCode='', deviceName='延长服务包2', subDeviceName='华为无忧2', isEnable=true},
-
-    Person{derviceCode='ES02', offerCode='ES000023', itemCode='', deviceName='延长服务包2', subDeviceName='华为无忧2', isEnable=false},
-
-    Person{derviceCode='ES03', offerCode='ES000031', itemCode='', deviceName='延长服务包3', subDeviceName='华为无忧3', isEnable=false},
-    Person{derviceCode='ES03', offerCode='ES000032', itemCode='', deviceName='延长服务包3', subDeviceName='华为无忧3', isEnable=true},
-    Person{derviceCode='ES03', offerCode='ES000033', itemCode='', deviceName='延长服务包3', subDeviceName='华为无忧3', isEnable=true},
-
-    Person{derviceCode='ES04', offerCode='ES00004', itemCode='ITEM00004', deviceName='延长服务包4', subDeviceName='华为无忧4', isEnable=true},
-    Person{derviceCode='ES04', offerCode='ES000041', itemCode='ITEM000041', deviceName='延长服务包41', subDeviceName='华为无忧41', isEnable=true},
-    Person{derviceCode='ES04', offerCode='ES000042', itemCode='ITEM000042', deviceName='延长服务包42', subDeviceName='华为无忧42', isEnable=false},
-
-    Person{derviceCode='ES05', offerCode='', itemCode='', deviceName='延长服务包5', subDeviceName='华为无忧5', isEnable=false},
-
-    Person{derviceCode='ES06', offerCode='ES00006', itemCode='', deviceName='延长服务包6', subDeviceName='华为无忧6', isEnable=true},
-
-    Person{derviceCode='ES07', offerCode='ES00007', itemCode='ITEM00007', deviceName='延长服务包7', subDeviceName='华为无忧7', isEnable=true},
-    Person{derviceCode='ES07', offerCode='ES000071', itemCode='ITEM000071', deviceName='延长服务包7', subDeviceName='华为无忧7', isEnable=true},
-    Person{derviceCode='ES07', offerCode='ES000072', itemCode='ITEM000072', deviceName='延长服务包7', subDeviceName='华为无忧7', isEnable=true},
-
-    Person{derviceCode='ES08', offerCode='ES00008', itemCode='', deviceName='延长服务包8', subDeviceName='华为无忧8', isEnable=true},
-
-    Person{derviceCode='ES09', offerCode='', itemCode='', deviceName='延长服务包9', subDeviceName='华为无忧9', isEnable=false},
-
-    Person{derviceCode='ES010', offerCode='ES000010', itemCode='', deviceName='延长服务包10', subDeviceName='华为无忧10', isEnable=false}]
+//    [
+//    Person{derviceCode='ES01', offerCode='ES00001', itemCode='', deviceName='延长服务包', subDeviceName='华为无忧', isEnable=false},
+//
+//    Person{derviceCode='ES01', offerCode='ES000012', itemCode='', deviceName='延长服务包', subDeviceName='华为无忧', isEnable=true},
+//
+//    Person{derviceCode='ES01', offerCode='', itemCode='', deviceName='延长服务包', subDeviceName='华为无忧', isEnable=false},
+//
+//    Person{derviceCode='ES02', offerCode='ES00002', itemCode='ITEM00002', deviceName='延长服务包2', subDeviceName='华为无忧2', isEnable=false},
+//
+//    Person{derviceCode='ES02', offerCode='', itemCode='', deviceName='延长服务包2', subDeviceName='华为无忧2', isEnable=true},
+//
+//    Person{derviceCode='ES02', offerCode='ES000023', itemCode='', deviceName='延长服务包2', subDeviceName='华为无忧2', isEnable=false},
+//
+//    Person{derviceCode='ES03', offerCode='ES000031', itemCode='', deviceName='延长服务包3', subDeviceName='华为无忧3', isEnable=false},
+//    Person{derviceCode='ES03', offerCode='ES000032', itemCode='', deviceName='延长服务包3', subDeviceName='华为无忧3', isEnable=true},
+//    Person{derviceCode='ES03', offerCode='ES000033', itemCode='', deviceName='延长服务包3', subDeviceName='华为无忧3', isEnable=true},
+//
+//    Person{derviceCode='ES04', offerCode='ES00004', itemCode='ITEM00004', deviceName='延长服务包4', subDeviceName='华为无忧4', isEnable=true},
+//    Person{derviceCode='ES04', offerCode='ES000041', itemCode='ITEM000041', deviceName='延长服务包41', subDeviceName='华为无忧41', isEnable=true},
+//    Person{derviceCode='ES04', offerCode='ES000042', itemCode='ITEM000042', deviceName='延长服务包42', subDeviceName='华为无忧42', isEnable=false},
+//
+//    Person{derviceCode='ES05', offerCode='', itemCode='', deviceName='延长服务包5', subDeviceName='华为无忧5', isEnable=false},
+//
+//    Person{derviceCode='ES06', offerCode='ES00006', itemCode='', deviceName='延长服务包6', subDeviceName='华为无忧6', isEnable=true},
+//
+//    Person{derviceCode='ES07', offerCode='ES00007', itemCode='ITEM00007', deviceName='延长服务包7', subDeviceName='华为无忧7', isEnable=true},
+//    Person{derviceCode='ES07', offerCode='ES000071', itemCode='ITEM000071', deviceName='延长服务包7', subDeviceName='华为无忧7', isEnable=true},
+//    Person{derviceCode='ES07', offerCode='ES000072', itemCode='ITEM000072', deviceName='延长服务包7', subDeviceName='华为无忧7', isEnable=true},
+//
+//    Person{derviceCode='ES08', offerCode='ES00008', itemCode='', deviceName='延长服务包8', subDeviceName='华为无忧8', isEnable=true},
+//
+//    Person{derviceCode='ES09', offerCode='', itemCode='', deviceName='延长服务包9', subDeviceName='华为无忧9', isEnable=false},
+//
+//    Person{derviceCode='ES010', offerCode='ES000010', itemCode='', deviceName='延长服务包10', subDeviceName='华为无忧10', isEnable=false}]
 
 
 public List<Person> data(){

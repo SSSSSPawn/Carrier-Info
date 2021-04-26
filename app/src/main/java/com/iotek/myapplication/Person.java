@@ -1,6 +1,9 @@
 package com.iotek.myapplication;
 
-public class Person {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Person implements Parcelable {
 
     private String derviceCode;
     private String offerCode;
@@ -17,6 +20,27 @@ public class Person {
         this.subDeviceName = subDeviceName;
         this.isEnable = isEnable;
     }
+
+    protected Person(Parcel in) {
+        derviceCode = in.readString();
+        offerCode = in.readString();
+        itemCode = in.readString();
+        deviceName = in.readString();
+        subDeviceName = in.readString();
+        isEnable = in.readByte() != 0;
+    }
+
+    public static final Creator<Person> CREATOR = new Creator<Person>() {
+        @Override
+        public Person createFromParcel(Parcel in) {
+            return new Person(in);
+        }
+
+        @Override
+        public Person[] newArray(int size) {
+            return new Person[size];
+        }
+    };
 
     public String getDerviceCode() {
         return derviceCode;
@@ -76,5 +100,20 @@ public class Person {
                 ", subDeviceName='" + subDeviceName + '\'' +
                 ", isEnable=" + isEnable +
                 '}';
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(derviceCode);
+        dest.writeString(offerCode);
+        dest.writeString(itemCode);
+        dest.writeString(deviceName);
+        dest.writeString(subDeviceName);
+        dest.writeByte((byte) (isEnable ? 1 : 0));
     }
 }
